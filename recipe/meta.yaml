@@ -1,5 +1,5 @@
 {% set name = "mct_quantizers" %}
-{% set version = "1.5.2" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/sony/mct_quantizers/archive/v{{ version }}.tar.gz
-  sha256: ea6ab1f271187484d53cb515577b2d0cb59332058ebca5878474e6524ab1d4ef
+  sha256: 0b1e13ba3a02362b644db88fc75f0215d23f79fbfd30ca260315a46425d1c948
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
